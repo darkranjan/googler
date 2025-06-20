@@ -1,0 +1,544 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #3c4043;
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    padding: 6px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-link {
+    color: #3c4043;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+    background-color: rgba(60, 64, 67, 0.08);
+}
+
+.apps-menu-btn {
+    background: none;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.apps-menu-btn:hover {
+    background-color: rgba(60, 64, 67, 0.08);
+}
+
+.apps-icon {
+    width: 24px;
+    height: 24px;
+    opacity: 0.6;
+}
+
+.profile-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.profile-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #4285f4;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Main Content */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 584px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-container {
+    margin-bottom: 35px;
+}
+
+.google-logo {
+    width: 272px;
+    height: 92px;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 584px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 584px;
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 0 16px;
+    margin-bottom: 30px;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.search-box:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.search-box:focus-within {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.search-icon-left {
+    margin-right: 13px;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #3c4043;
+    background: transparent;
+    height: 100%;
+}
+
+.search-icon-right {
+    margin-left: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mic-btn,
+.camera-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mic-icon,
+.camera-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.search-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 11px;
+    margin-bottom: 30px;
+}
+
+.search-btn,
+.lucky-btn {
+    background: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    height: 36px;
+    padding: 0 16px;
+    cursor: pointer;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.search-btn:hover,
+.lucky-btn:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-color: #c6c6c6;
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+}
+
+.search-btn:active,
+.lucky-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.language-links {
+    font-size: 13px;
+    color: #3c4043;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.language-links a {
+    color: #1a0dab;
+    text-decoration: none;
+    margin: 0 3px;
+}
+
+.language-links a:hover {
+    text-decoration: underline;
+    color: #1558d6;
+}
+
+/* Footer */
+.footer {
+    background: #f2f2f2;
+    margin-top: auto;
+}
+
+.footer-country {
+    padding: 15px 30px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #dadce0;
+    margin: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    gap: 27px;
+}
+
+.footer-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-link {
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: none;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: #1558d6;
+}
+
+.carbon-neutral {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.carbon-icon {
+    width: 12px;
+    height: 12px;
+}
+
+/* Enhanced loading and animation styles */
+.search-box.loading {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath fill='%234285f4' d='M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z'%3E%3CanimateTransform attributeName='transform' dur='1s' repeatCount='indefinite' type='rotate' values='0 12 12;360 12 12'/%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 46px center;
+}
+
+/* Enhanced button hover effects */
+.search-btn:hover,
+.lucky-btn:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-color: #c6c6c6;
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+}
+
+.search-btn:active,
+.lucky-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced microphone and camera button effects */
+.mic-btn:hover,
+.camera-btn:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 50%;
+    padding: 8px;
+    transition: all 0.2s ease;
+}
+
+.mic-btn:active,
+.camera-btn:active {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Profile avatar enhancements */
+.profile-avatar {
+    background: linear-gradient(135deg, #4285f4, #34a853);
+    transition: all 0.2s ease;
+}
+
+.profile-btn:hover .profile-avatar {
+    box-shadow: 0 2px 8px rgba(66, 133, 244, 0.3);
+    transform: scale(1.05);
+}
+
+/* Apps menu button enhancement */
+.apps-menu-btn:hover {
+    background-color: rgba(60, 64, 67, 0.08);
+    transform: scale(1.1);
+}
+
+/* Enhanced search input animations */
+.search-input:focus {
+    outline: none;
+}
+
+.search-box:focus-within {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+/* Language links hover effects */
+.language-links a:hover {
+    text-decoration: underline;
+    color: #1558d6;
+}
+
+/* Footer enhancements */
+.footer-link:hover {
+    color: #1558d6;
+}
+
+/* Notification styles */
+.notification {
+    position: fixed;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    z-index: 10000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    animation: notificationSlideIn 0.3s ease-out;
+}
+
+@keyframes notificationSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        padding: 6px 8px;
+    }
+    
+    .nav-left,
+    .nav-right {
+        gap: 8px;
+    }
+    
+    .nav-link {
+        font-size: 12px;
+        padding: 6px;
+    }
+    
+    .google-logo {
+        width: 200px;
+        height: 68px;
+    }
+    
+    .search-box {
+        max-width: 90%;
+    }
+    
+    .search-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .search-btn,
+    .lucky-btn {
+        width: 180px;
+    }
+    
+    .language-links {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .footer-left,
+    .footer-right {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer-center {
+        order: -1;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-left a:first-child,
+    .nav-right a:first-child {
+        display: none;
+    }
+    
+    .main {
+        padding: 0 15px;
+    }
+    
+    .search-box {
+        height: 40px;
+        padding: 0 12px;
+    }
+    
+    .search-input {
+        font-size: 14px;
+    }
+    
+    .google-logo {
+        width: 180px;
+        height: 61px;
+    }
+    
+    .footer-left,
+    .footer-right {
+        gap: 10px;
+    }
+    
+    .footer-link {
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+}
+
+/* Focus styles for accessibility */
+.search-input:focus {
+    outline: none;
+}
+
+.search-btn:focus,
+.lucky-btn:focus,
+.apps-menu-btn:focus,
+.profile-btn:focus,
+.mic-btn:focus {
+    outline: 2px solid #4285f4;
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .search-box {
+        border: 2px solid #000;
+    }
+    
+    .search-btn,
+    .lucky-btn {
+        border: 2px solid #000;
+        background: #fff;
+        color: #000;
+    }
+}
+
+/* Dark theme additional styles */
+.dark-theme .search-box.loading {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath fill='%238ab4f8' d='M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z'%3E%3CanimateTransform attributeName='transform' dur='1s' repeatCount='indefinite' type='rotate' values='0 12 12;360 12 12'/%3E%3C/path%3E%3C/svg%3E");
+}
+
+.dark-theme .search-btn,
+.dark-theme .lucky-btn {
+    background: #303134;
+    border-color: #5f6368;
+    color: #e8eaed;
+}
+
+.dark-theme .search-btn:hover,
+.dark-theme .lucky-btn:hover {
+    background: #3c4043;
+    border-color: #70757a;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
